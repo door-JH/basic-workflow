@@ -10,8 +10,10 @@ env:
 
 
 jobs:
-  check-var-01:
+  check-var:
     runs-on: ubuntu-latest
+    env:
+      MESSAGE: Hello
     steps:
       - name: "It's Day!"
-        run: echo "Today is $Day_OF_WEEK!"
+        run: echo "$MESSAGE, Today is $Day_OF_WEEK!"
