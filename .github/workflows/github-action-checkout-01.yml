@@ -15,4 +15,6 @@ jobs:
         
       - name: Github Actions Checkout
         uses: actions/checkout@v4
+        with:
+          path: checkout-dir
       - run: ls -al
