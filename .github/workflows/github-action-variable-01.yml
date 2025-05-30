@@ -16,6 +16,7 @@ jobs:
       MESSAGE: Hello
     steps:
       - name: "It's Day!"
+        if: ${{env.Day_OF_WEEK == 'Thursday'}}
         run: echo "$MESSAGE, Today is $Day_OF_WEEK!"
   check-var2:
      runs-on: ubuntu-latest
