@@ -4,7 +4,7 @@
 name: Test Github Actions checkout-01
 run-name: Run Github Actions inputs, outputs, needs
 on:
-  push
+  workflow_dispatch
 
 jobs:
   checkout:
